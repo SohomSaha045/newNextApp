@@ -1,0 +1,12 @@
+.about-menu{
+    display: flex;
+    width: 100%;
+    
+}
+.list-style{
+    margin-left: 25px;
+    list-style-type: none;
+}
+.about-menu li a{
+text-decoration: none;
+}
