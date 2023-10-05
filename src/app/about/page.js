@@ -14,7 +14,7 @@ const about=()=>{
     <button onClick={()=>router.push("/about/aboutStudent")}>To About Student</button>
     <br />
     <button onClick={()=>router.push("/about/aboutCollege")}>To About College</button>
-
+  
 
     </div>
     );

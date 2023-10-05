@@ -32,6 +32,9 @@ return (
     {
         children
     }
+    <br />
+    <br />
+    <Link href="/productList" > P-List</Link>
     <h2>end of about</h2>
     </div>
 )
