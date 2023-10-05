@@ -1,3 +1,4 @@
+import Rating from "./product";
 
 const pList=async()=>{
     let data=await fetch("https://dummyjson.com/products");
@@ -6,7 +7,7 @@ const pList=async()=>{
 }
 export default async function Page() {
   let product=await pList();
-  console.log(product);
+  console.log(product)
   return (
     <div>
       <h1>Product List Server</h1>
@@ -15,6 +16,7 @@ export default async function Page() {
             <div>
             <h2>Product: {item.title}</h2>
             <h3>Price: $ {item.price}</h3>
+            <Rating rating={item.rating}/>
             <br></br>
 
             </div>
