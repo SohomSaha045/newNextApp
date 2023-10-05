@@ -35,6 +35,7 @@ return (
     <br />
     <br />
     <Link href="/productList" > P-List</Link>
+    <Link href="/productListServer" > P-List from Server</Link>
     <h2>end of about</h2>
     </div>
 )
