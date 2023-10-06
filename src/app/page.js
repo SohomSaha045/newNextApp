@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import style from "@/styles/outside.module.css";
 // const useRouter = require('next/navigation');
 
 import Link from "next/link";
@@ -11,7 +12,7 @@ export default function Home() {
       <h1>Hello</h1>
       <button onClick={() => alert("hi")}> Click me </button>
       <br />
-      <Link href="/login">Login</Link>
+      <Link href="/login" className={style.out}>Login</Link>
       <br />
       <Link href="/about">About</Link>
       <br />
