@@ -10,13 +10,13 @@ export default async function Page() {
   console.log(product)
   return (
     <div>
-      <h1>Product List Server</h1>
+      <h1 style={{color:"purple"}}>Product List Server</h1>
       { 
         product.map((item)=>(
             <div>
             <h2>Product: {item.title}</h2>
             <h3>Price: $ {item.price}</h3>
-            <Rating rating={item.rating}/>
+            <Rating rating={item.rating} />
             <br></br>
 
             </div>

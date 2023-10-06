@@ -1,10 +1,12 @@
 'use client'
 
-export default function Rating(props){
+import { useState } from "react";
 
+export default function Rating(props){
+   const [button,setButton]=useState({backgroundColor:''});
     return (
         <div>
-        <button onClick={()=>alert(props.rating)}>Show Rating</button>
+        <button onClick={()=>{alert(props.rating);setButton({backgroundColor:'purple'})}} style={button}>Show Rating</button>
         </div>
     )
-}
+}  
